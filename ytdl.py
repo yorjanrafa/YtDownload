@@ -1,9 +1,10 @@
 import os
 import yt_dlp
 
-def downloader(link, format, output_dir, result_label):
-    video_url = str(link)
-    select_format = format
+# Directorio de salida
+output_dir = "Descargas"
+
+def downloader(video_url, select_format, result_label):
     ydl_opts = {
         'format': 'bestaudio/best',
         'outtmpl': os.path.join(output_dir, '%(title)s.%(ext)s'),
@@ -18,4 +19,4 @@ def downloader(link, format, output_dir, result_label):
             ydl.download([video_url])
         result_label.configure(text='DESCARGADO', text_color='green')  # Cambiado a configure
     except Exception as e:
-        result_label.configure(text='ERROR EN DESCARGA', text_color='red')  # 
+        result_label.configure(text='ERROR EN DESCARGA', text_color='red')  # Cambiado a configure
