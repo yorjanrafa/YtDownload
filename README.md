@@ -2,6 +2,8 @@
 
 Programa para descargar y convertir contenido de YouTube
 
+![Captura](./image/captura.png)
+
 Este es un codigo con fines netamentes educativos y no pretendende violentar ni infringir el copyright de cualquier contenido en YouTube
 
 ## Creador original
